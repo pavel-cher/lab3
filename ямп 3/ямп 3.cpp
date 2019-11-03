@@ -34,7 +34,6 @@ int main()
 	for (int i = 1; i < N; i++) {
 		for (int j = 1; j < M; j++)//считалка
 			ost = A[ost].sled;
-		cout << ost;
 		A[A[ost].pred].sled = A[ost].sled;
 		A[A[ost].sled].pred = A[ost].pred;
 		ost = A[ost].sled;
